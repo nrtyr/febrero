@@ -1,0 +1,16 @@
+@font-face{
+	font-family:"Gotham-Book";
+	src: url(fonts/Gotham-Book.otf);
+}
+@font-face{
+	font-family:"Gotham-Bold";
+	src: url(fonts/Gotham-Bold.otf);
+}
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: Gotham-Book;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: Gotham-Bold;
+}
