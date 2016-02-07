@@ -1,0 +1,53 @@
+@font-face{
+	font-family:"Gotham-Book";
+	src: url(fonts/gothambook.woff);
+}
+@font-face{
+	font-family:"Gotham-Bold";
+	src: url(fonts/gothambold.woff);
+}
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: inherit;
+}
+html{
+	height: 100%;
+}
+body{
+	height: 100%;
+}
+hgroup{
+	text-align: center;
+}
+.banner{
+	width: 100%;
+	height: 200px;
+	margin: auto;
+	display: block;
+	background-image: url(../img/banner.png);
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+	background-position: center 50%;
+	overflow: auto;
+}
+nav{
+	width: 100%;
+	height: 50px;
+	overflow: auto;
+	text-align: center;
+}
+.menuH li{
+	display: inline-block;
+	line-height: 50px;
+	padding: 0 1em;
+}
+.menuH a{
+	text-decoration: none;
+}
+@media screen and (max-width: 736px){
+	nav{
+		display: none;
+		}
+}

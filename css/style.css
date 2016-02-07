@@ -1,24 +1,155 @@
+
 @font-face{
-	font-family:"Gotham-Book";
-	src: url(fonts/Gotham-Book.otf);
+	font-family:"OpenSans-CondBold";
+	src: url(fonts/OpenSans-CondBold.ttf);
 }
-@font-face{
-	font-family:"Gotham-Bold";
-	src: url(fonts/Gotham-Bold.otf);
-}
+
 *{
 	margin: 0px;
 	padding: 0px;
-	font-family: Gotham-Book;
+	font-family: inherit;
 }
-h1,h2,h3,h4,h5,h6{
-	font-family: Gotham-Bold;
+html{
+	height: 100%;
+}
+body{
+	height: 100%;
 }
 hgroup{
 	text-align: center;
 }
+
+/*Baner*/
+
 .banner{
 	width: 100%;
+	height: 300px;
 	margin: auto;
 	display: block;
+	background-image: url(../img/banner.png);
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+	background-position: center 50%;
+	overflow: auto;
+}
+
+/*header*/
+
+header{
+	margin-top: 0px;
+	width: 100%;
+	height: 150px;
+	overflow: hidden;
+	position: relative;
+	
+}
+
+
+/*Menu*/
+.cNav{
+	width: 100%;
+	height: 60px;
+	background-image: url('img/overlay.png');
+}
+nav{
+	top: -20px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 20px auto;
+	max-width: 1000px;
+	width: 90%;
+}
+nav ul{
+	list-style: none;
+}
+nav > ul{
+	display: table;
+	width: 100%;
+	position: relative;
+}
+nav > ul li{
+	display: table-cell;
+}
+
+
+/* Sub-menu */
+
+nav > ul > li:hover > ul{
+	display: block;
+	height: 100%;
+}
+nav > ul > li > ul {
+	display: block;
+	position: absolute;
+	background-image: url('img/overlay.png');
+	left: 0px;
+	right: 0px;
+	-webkit-border-radius: 0px 0px 7px 7px;
+	        border-radius: 0px 0px 7px 7px;
+	overflow: hidden;
+	height: 0%;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+}
+
+nav > ul > li > ul{
+	display: none;
+}
+nav > ul li a{
+	font-family: 'OpenSans-CondBold';
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: .9em;
+	color: #6b7770;
+	display: block;
+	line-height: 20px;
+	padding: 20px;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+
+
+nav > ul > li > ul > li a:hover{
+	background-color: #93b535;
+	color: #FFF;
+}
+nav > ul > li > a span{
+	background-color: #93b535;
+	color: #FFF;
+	display: block;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	position: absolute;
+	top: -55px;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+	font-size: 30px;
+	-webkit-border-radius: 0px;
+	        border-radius: 0px;
+}
+nav > ul > li > a span .icon{
+	display: block;
+	line-height: 60px;
+}
+nav > ul > li > a:hover > span{
+	top: 0px;
+	-webkit-border-radius: 0px 0px 7px 7px;
+	        border-radius: 0px 0px 7px 7px;
 }
