@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'icomoon';
-    src:    url('fonts/icomoon.eot?dnrv2e');
-    src:    url('fonts/icomoon.eot?dnrv2e#iefix') format('embedded-opentype'),
-        url('fonts/icomoon.ttf?dnrv2e') format('truetype'),
-        url('fonts/icomoon.woff?dnrv2e') format('woff'),
-        url('fonts/icomoon.svg?dnrv2e#icomoon') format('svg');
+    src:    url('fonts/icomoon.eot?jcm0mw');
+    src:    url('fonts/icomoon.eot?jcm0mw#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?jcm0mw') format('truetype'),
+        url('fonts/icomoon.woff?jcm0mw') format('woff'),
+        url('fonts/icomoon.svg?jcm0mw#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -25,18 +25,21 @@
 }
 
 .icon-Inicio:before {
-    content: "\e900";
-}
-.icon-Noticias:before {
     content: "\e901";
 }
-.icon-Ayuntamiento:before {
+.icon-Noticias:before {
     content: "\e902";
+}
+.icon-Ayuntamiento:before {
+    content: "\e903";
 }
 .icon-Tramites:before {
     content: "\e904";
 }
+.icon-Menu:before {
+    content: "\e900";
+}
 .icon-Transparencia:before {
-    content: "\e906";
+    content: "\e905";
 }
 

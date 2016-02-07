@@ -1,11 +1,11 @@
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic|Open+Sans+Condensed:700");
+
 @font-face{
-	font-family:"Gotham-Book";
-	src: url(fonts/gothambook.woff);
+	font-family:'Open Sans Condensed';
+	src: url(fonts/OpenSans-CondBold.woff);
+	src: url(fonts/OpenSans-CondBold.ttf);
 }
-@font-face{
-	font-family:"Gotham-Bold";
-	src: url(fonts/gothambold.woff);
-}
+
 *{
 	margin: 0px;
 	padding: 0px;
@@ -15,8 +15,19 @@ html{
 	height: 100%;
 }
 body{
+	background: #f2f5f3;
 	height: 100%;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	color: #6b7770;
+	line-height: 1.75em;
+	font-size: 10pt;
+	letter-spacing: 0;
 }
+section, article {
+				clear: both;
+				margin: 0 0 2.5em 0 !important;
+			}
 hgroup{
 	text-align: center;
 }
@@ -32,22 +43,90 @@ hgroup{
 	background-position: center 50%;
 	overflow: auto;
 }
-nav{
+
+header{
 	width: 100%;
-	height: 50px;
-	overflow: auto;
-	text-align: center;
 }
-.menuH li{
-	display: inline-block;
-	line-height: 50px;
-	padding: 0 1em;
+header nav{
+	width: 90%;
+	max-width: 1000px;
+	margin: 20px auto;
+	background-color: #93b535;
 }
-.menuH a{
+header nav ul{
+	overflow: hidden;
+	list-style: none;
+}
+header nav ul li{
+	float: left;
+}
+header nav ul li a{
+	text-transform: uppercase;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 1.2em;
+	color: #FFF;
+	padding: 20px;
+	display: block;
 	text-decoration: none;
 }
-@media screen and (max-width: 736px){
-	nav{
-		display: none;
-		}
+header nav ul li span{
+	margin-right: 10px;
+}
+header nav ul li a:hover{
+	background-color: #6b7770;
+}
+
+section, footer{
+	padding: 20px;
+}
+
+@media screen and (max-width:736px){
+
+	header nav{
+		
+		width: 60%;
+		height: 100%;
+		left: -100%;
+		margin: 0px;
+		top: 83px;
+		overflow: auto;
+		position: fixed;
+	}
+	header nav ul li{
+		display: block;
+		float: none;
+		border-bottom: 1px solid rgba(255,255,255, .3);
+	}
+
+	/* Sub-Menu */
+	nav > ul > li > ul {
+		width: 100%;
+	padding: 0px 40px;
+	}
+	/* Sub-Menu */
+	
+	.menu_bar{
+		display: block;
+		width: 100%;
+		background-color: #ccc;
+		position: fixed;
+		top: 0px;
+	}
+	.menu_bar .bt-menu{
+		display: block;
+		padding: 20px;
+		line-height: 1.75em;
+		background-color: #93b535;
+		color: #FFF;
+		text-decoration: none;
+		font-weight: bold;
+		font-size: 25px;
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+		        box-sizing: border-box;
+	}
+	.menu_bar span{
+		float: right;
+		font-size: 40px;
+	}
 }

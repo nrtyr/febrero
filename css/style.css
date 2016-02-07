@@ -1,6 +1,7 @@
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic|Open+Sans+Condensed:700");
 
 @font-face{
-	font-family:"OpenSans-CondBold";
+	font-family:'Open Sans Condensed';
 	src: url(fonts/OpenSans-CondBold.woff);
 	src: url(fonts/OpenSans-CondBold.ttf);
 }
@@ -16,7 +17,17 @@ html{
 }
 body{
 	height: 100%;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	color: #6b7770;
+	font-size: 11.5pt;
+	line-height: 1.75em;
+	letter-spacing: 0;
 }
+section, article {
+				clear: both;
+				margin: 0 0 2.5em 0 !important;
+			}
 hgroup{
 	text-align: center;
 }
@@ -28,7 +39,7 @@ hgroup{
 	height: 300px;
 	margin: auto;
 	display: block;
-	background-image: url(../img/banner.png);
+	background-image: url('../img/banner.png');
 	-webkit-background-size: cover;
 	     -o-background-size: cover;
 	        background-size: cover;
@@ -98,13 +109,12 @@ nav > ul > li > ul {
 	-o-transition: all .3s ease;
 	transition: all .3s ease;
 }
-}
 
 nav > ul > li > ul{
 	display: none;
 }
 nav > ul li a{
-	font-family: 'OpenSans-CondBold';
+	font-family: 'Open Sans Condensed', sans-serif;
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: .9em;
@@ -154,4 +164,7 @@ nav > ul > li > a:hover > span{
 	top: 0px;
 	-webkit-border-radius: 0px 0px 7px 7px;
 	        border-radius: 0px 0px 7px 7px;
+}
+.menu_bar{
+	display: none;
 }
