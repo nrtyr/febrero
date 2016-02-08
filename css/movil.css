@@ -67,6 +67,7 @@ hgroup{
 	overflow: auto;
 }
 
+/* Menu */
 header{
 	width: 100%;
 }
@@ -155,4 +156,12 @@ section, footer{
 		font-size: 1.3em;
 		line-height: 50px;
 	}
+}
+
+/* Menu */
+
+.verde{
+	color: #93b535;
+	font-family: inherit;
+	font-size: 25px;
 }

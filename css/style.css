@@ -52,7 +52,7 @@ hgroup{
 header{
 	margin-top: 0px;
 	width: 100%;
-	height: 150px;
+	height: 60px;
 	overflow: hidden;
 	position: relative;
 	
@@ -63,11 +63,14 @@ header{
 .cNav{
 	width: 100%;
 	height: 60px;
+	position: fixed;
 	background-image: url('img/overlay.png');
+	background-color: rgba(255, 255, 255, .8);
+	z-index: 999;
 }
 nav{
 	top: -20px;
-	position: absolute;
+	position: fixed;
 	left: 0;
 	right: 0;
 	margin: 20px auto;
@@ -76,6 +79,7 @@ nav{
 }
 nav ul{
 	list-style: none;
+	
 }
 nav > ul{
 	display: table;
@@ -97,6 +101,7 @@ nav > ul > li > ul {
 	display: block;
 	position: absolute;
 	background-image: url('img/overlay.png');
+	background-color: rgba(255, 255, 255, .8);
 	left: 0px;
 	right: 0px;
 	-webkit-border-radius: 0px 0px 7px 7px;
@@ -191,3 +196,80 @@ nav > ul > li > a:hover > span{
 .menu_bar{
 	display: none;
 }
+/*Menu*/
+
+.verde{
+	color: #93b535;
+	font-family: inherit;
+	font-size: 30px;
+}
+
+/* hgroup */
+
+hgroup{
+	width: 100%;
+	height: 600px;
+	top: -80px;
+	background-color: #a0291b;
+}
+
+/* hgroup */
+
+
+/*.contenedor{
+	width: 100%;
+	height: 600px;
+}
+.cuadroEnca{
+	position: absolute;
+	margin: 80px auto;
+	width: 100%;
+	height: 40px;
+	text-align: center;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 25px;
+}*/
+
+/* Paralax */
+
+.contenedor{
+	width: 100%;
+	margin: 0 auto;
+}
+.bloque h2{
+	margin-bottom: 30px;
+}
+.bloque h1{
+	text-align: center;
+	margin: 0 auto;
+	display: block;
+	font-size: 35px;
+	line-height: 600px;
+}
+.bloque p{
+	margin-bottom: 40px;
+	font-size: 16px;
+}
+.bloque.paralax{
+	height: 600px;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+	background-attachment: fixed;
+}
+.paralax.imagen-1{
+	background-image: url('../img/Colors-Wallpaper-Desktop-2.jpg');
+}
+.paralax.imagen-2{
+	background-image: url('../img/HD-Wallpapers1_QlwttNW.jpeg');
+}
+
+.paralax.imagen-3{
+	background-image: url('../img/i-should-buy-a-boat.jpg');
+}
+
+
+/* Paralax */
+
