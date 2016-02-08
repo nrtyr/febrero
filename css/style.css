@@ -117,7 +117,7 @@ nav > ul li a{
 	font-family: 'Open Sans Condensed', sans-serif;
 	text-transform: uppercase;
 	font-weight: 700;
-	font-size: .9em;
+	font-size: 1em;
 	color: #6b7770;
 	display: block;
 	line-height: 20px;
@@ -133,6 +133,29 @@ nav > ul li a{
 }
 
 
+nav > ul > li > ul > li a{
+	display: block;
+	position: relative;
+	height: 60px;
+	font-size: .9em;
+	padding: 17px 10px;
+	line-height: 15px;
+}
+
+/* Pantalla de 800 o mas */
+
+@media screen and (min-width:800px){
+	nav > ul > li > ul > li a{
+	display: block;
+	position: relative;
+	height: 60px;
+	font-size: .9em;
+	padding: 17px 20px;
+	line-height: 15px;
+}
+}
+
+/* Pantalla de 800 o mas */
 
 nav > ul > li > ul > li a:hover{
 	background-color: #93b535;

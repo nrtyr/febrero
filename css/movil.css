@@ -11,6 +11,27 @@
 	padding: 0px;
 	font-family: inherit;
 }
+h1{
+	font-size: 25px;
+}
+
+@media screen and (max-width:450px){
+	h1{
+	font-size: 19px;
+	}
+	h2{
+	font-size: 18px;
+	}
+	h2{
+	font-size: 17px;
+	}
+	h2{
+	font-size: 16px;
+	}
+	
+}
+
+
 html{
 	height: 100%;
 }
@@ -29,6 +50,8 @@ section, article {
 				margin: 0 0 2.5em 0 !important;
 			}
 hgroup{
+	margin-top: 80px;
+	padding: 20px;
 	text-align: center;
 }
 .banner{
@@ -88,7 +111,7 @@ section, footer{
 		height: 100%;
 		left: -100%;
 		margin: 0px;
-		top: 83px;
+		top: 50px;
 		overflow: auto;
 		position: fixed;
 	}
@@ -100,33 +123,36 @@ section, footer{
 
 	/* Sub-Menu */
 	nav > ul > li > ul {
-		width: 100%;
-	padding: 0px 40px;
+		width: 95%;
+		padding: 0px 40px;
 	}
 	/* Sub-Menu */
 	
 	.menu_bar{
 		display: block;
 		width: 100%;
-		background-color: #ccc;
+		height: 50px;
+		background-color: #CCC;
 		position: fixed;
 		top: 0px;
 	}
 	.menu_bar .bt-menu{
 		display: block;
-		padding: 20px;
-		line-height: 1.75em;
+		height: 50px;
+		padding: 0px 20px;
 		background-color: #93b535;
+		line-height: 50px;
 		color: #FFF;
 		text-decoration: none;
 		font-weight: bold;
-		font-size: 25px;
+		font-size: 1.5em;
 		-webkit-box-sizing: border-box;
 		   -moz-box-sizing: border-box;
 		        box-sizing: border-box;
 	}
 	.menu_bar span{
 		float: right;
-		font-size: 40px;
+		font-size: 1.3em;
+		line-height: 50px;
 	}
 }
